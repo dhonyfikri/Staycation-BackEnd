@@ -1,0 +1,48 @@
+<div class="card shadow mb-4">
+  <div class="card-header py-3">
+    <a href="/admin/booking" class="btn btn-warning">Back</a>
+  </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-4">
+          <img src="http://localhost:3000/<%= booking.payments.proofPayment %>" alt="Foto Bukti Pembayaran" style="width: 100%; display: block;">
+          <% if(booking.payments.status.toLowerCase() == 'proses') { %>
+            <div class="row mt-2">
+              <div class="col-md-6">
+                <form action="/admin/booking/<%= booking.id %>/confirmation?_method=PUT" method="POST">
+                  <button type="submit" class="btn btn-success btn-sm w-100"><i class="fas fa-check mr-2"></i>Confirmation</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <form action="/admin/booking/<%= booking.id %>/reject?_method=PUT" method="POST">
+                  <button type="submit" class="btn btn-danger btn-sm w-100"><i class="fas fa-times mr-2"></i>Reject</button>
+                </form>
+              </div>
+            </div>
+          <% } %>
+        </div>
+        <div class="col-md-8">
+          <div class="table-responsive">
+              <table class="table table-bordered" id="dataTableActivity" width="100%" cellspacing="0">
+                  <thead>
+                      <tr>
+                          <th>Nama Member</th>
+                          <th>Total</th>
+                          <th>Bank Asal</th>
+                          <th>Title</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <td><%= booking.memberId.firstName %> <%= booking.memberId.lastName %></td>
+                          <td>$<%= booking.total %></td>
+                          <td><%= booking.payments.bankFrom %></td>
+                          <td><%= booking.itemId.title %></td>
+                      </tr>
+                  </tbody>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>

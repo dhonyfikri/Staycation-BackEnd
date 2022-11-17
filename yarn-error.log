@@ -1,0 +1,52 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Dhony\.node\corepack\yarn\1.22.15\bin\yarn.js add bcrypt connect-flash express-session fs-extra methode-override mongoose@5.13.15 mongoose-seed multer startbootstrap-sb-admin-2
+
+PATH: 
+  C:\Users\Dhony\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Dhony\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Python310\Scripts;C:\Python310;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\dotnet;C:\Program Files\Microsoft SQL Server\130\Tools\Binn;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;H:\MATLAB2020\Polyspace\R2020a\runtime\win64;H:\MATLAB2020\Polyspace\R2020a\bin;H:\MATLAB2020\Polyspace\R2020a\polyspace\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn;C:\Program Files\PuTTY;C:\ProgramData\chocolatey\bin;C:\Program Files\Gradle\gradle-6.8.3\bin;C:\Program Files\Git\cmd;C:\Users\Dhony\AppData\Local\Android\Sdk;C:\Users\Dhony\AppData\Local\Android\Sdk\platform-tools;C:\Program Files\nodejs;C:\Program Files\Java\jdk-11.0.13\bin;C:\Users\Dhony\AppData\Local\Android\Sdk\emulator;C:\Users\Dhony\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\Dhony\AppData\Local\Programs\Python\Python39;C:\Users\Dhony\AppData\Local\Microsoft\WindowsApps;C:\Users\Dhony\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Dhony\.dotnet\tools;C:\Users\Dhony\AppData\Roaming\Composer\vendor\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.3.2\bin;C:\tools\dart-sdk\bin;C:\Users\Dhony\AppData\Roaming\Pub\Cache\bin;D:\kuliah\sinau\BWA\Flutter x Laravel\tools\flutter\bin;C:\Program Files\Java\jdk-11.0.13\bin;C:\Program Files\TestProject Agent;C:\Users\Dhony\AppData\Local\Android\Sdk\platform-tools;C:\Users\Dhony\AppData\Local\Android\Sdk;C:\Users\Dhony\AppData\Roaming\npm;C:\tools\dart-sdk;C:\Users\Dhony\AppData\Local\Android\Sdk\emulator;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.15
+
+Node version: 
+  16.13.2
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/methode-override: Not found
+      at Request.params.callback [as _callback] (C:\Users\Dhony\.node\corepack\yarn\1.22.15\lib\cli.js:66140:18)
+      at Request.self.callback (C:\Users\Dhony\.node\corepack\yarn\1.22.15\lib\cli.js:140885:22)
+      at Request.emit (node:events:390:28)
+      at Request.<anonymous> (C:\Users\Dhony\.node\corepack\yarn\1.22.15\lib\cli.js:141857:10)
+      at Request.emit (node:events:390:28)
+      at IncomingMessage.<anonymous> (C:\Users\Dhony\.node\corepack\yarn\1.22.15\lib\cli.js:141779:12)
+      at Object.onceWrapper (node:events:509:28)
+      at IncomingMessage.emit (node:events:402:35)
+      at endReadableNT (node:internal/streams/readable:1343:12)
+      at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+npm manifest: 
+  {
+    "name": "server-staycation",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "start": "node ./bin/www",
+      "dev": "nodemon ./bin/www"
+    },
+    "dependencies": {
+      "cookie-parser": "~1.4.4",
+      "debug": "~2.6.9",
+      "ejs": "~2.6.1",
+      "express": "~4.16.1",
+      "http-errors": "~1.6.3",
+      "morgan": "~1.9.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
