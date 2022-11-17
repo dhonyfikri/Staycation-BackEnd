@@ -40,7 +40,7 @@
                                 <th><%= features[i].name %></th>
                                 <th><%= features[i].qty %></th>
                                 <th>
-                                    <img src="http://localhost:3000/<%= features[i].imageUrl %>" class="rounded mx-auto d-block" alt="imageUrl" width="auto" height="25px">
+                                    <img src="http://my-staycation-admin.herokuapp.com/<%= features[i].imageUrl %>" class="rounded mx-auto d-block" alt="imageUrl" width="auto" height="25px">
                                 </th>
                                 <th>
                                     <form action="/admin/item/<%= itemId %>/feature/<%= features[i].id %>?_method=DELETE" method="POST">

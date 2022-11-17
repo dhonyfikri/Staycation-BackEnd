@@ -40,7 +40,7 @@
                               <th><%= activity[i].name %></th>
                               <th><%= activity[i].type %></th>
                               <th>
-                                  <img src="http://localhost:3000/<%= activity[i].imageUrl %>" class="rounded mx-auto d-block" alt="imageUrl" width="auto" height="25px">
+                                  <img src="http://my-staycation-admin.herokuapp.com/<%= activity[i].imageUrl %>" class="rounded mx-auto d-block" alt="imageUrl" width="auto" height="25px">
                               </th>
                               <th>
                                   <form action="/admin/item/<%= itemId %>/activity/<%= activity[i].id %>?_method=DELETE" method="POST">

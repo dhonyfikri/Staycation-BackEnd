@@ -9,12 +9,16 @@ const flash = require("connect-flash");
 
 // import mongose
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost:27017/db_staycation_mern", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: true,
-});
+// mongoose.connect("mongodb://localhost:27017/db_staycation_mern", {
+mongoose.connect(
+    "mongodb+srv://admin:dhony123@cluster0.ozzex24.mongodb.net/db_staycation_mern?retryWrites=true&w=majority",
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: true,
+    }
+);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
