@@ -1,1 +1,1 @@
-web: node coba.js
+web: node ./bin/www
